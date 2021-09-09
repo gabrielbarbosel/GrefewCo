@@ -1,0 +1,273 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    min-height: auto;
+    min-width: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+header {
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    vertical-align: center;
+    justify-content: left;
+    background: linear-gradient(#112277, #221177);
+    text-shadow: 0.2vh 0.2vh dimgray;
+    border: 0.4vh none #AA33FF;
+    border-bottom-style: solid;
+    padding-left: 2vh;
+    font-size: 88%;
+    min-width: auto;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: yellow;
+    font-weight: 900;
+}
+
+main {
+    min-width: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(#8811FF 30%, #8825FF 35%, #8822FF);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+main form {
+    margin-top: 0;
+    width: 45vh;
+    height: 65vh;
+    background-color: #171819;
+    border-radius: 17px;
+    align-items: center;
+    border: 2px ridge deeppink;
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+main form .inputs-container {
+    margin-top: 10%;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main form .inputs-container input {
+    width: 80%;
+    height: 45px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #334499;
+    color: aliceblue;
+    border-radius: 17px;
+    margin-bottom: 0.8vh;
+    border: 2px solid deeppink;
+    text-align: left;
+    padding-left: 18px;
+}
+
+main form .inputs-container input:focus {
+    outline: none;
+    color: aliceblue;
+    text-align: left;
+    padding-left: 18px;
+    box-shadow: inset 2px 2px 2px #221177;
+}
+
+main form .password-container {
+    margin-top: 5%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#eye {
+    display: none;
+    cursor: pointer;
+    right: 13%;
+    top: 28%;
+    color: #777;
+    position: absolute;
+    font-size: 1em;
+}
+
+.password-container i {
+    position: absolute;
+    right: 13%;
+    top: 28%;
+    color: #777;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+}
+
+main form .password-infos {
+    width: 90%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0%;
+    padding-left: 4.7vh;
+    font-weight: 400;
+    color: #AA2288;
+}
+
+main form .password-infos a {
+    transition: 0.2s ease-in-out;
+    color: #AA22AA;
+    font-weight: 600;
+}
+
+#caixa:active {
+    color: #00ACEE;
+    background-color: #e34133;
+}
+
+main form .password-infos a:hover {
+    color: deeppink;
+}
+
+main form button {
+    background-color: #AA22AA;
+    width: 80%;
+    height: 45px;
+    border: 3px outset #161917;
+    outline: none;
+    border-radius: 17px;
+    box-shadow: inset 2px 2px 2px deeppink;
+    margin-top: 5%;
+    font-size: 1em;
+    font-weight: 900;
+    font-family: Roboto, sans-serif;
+    text-shadow: 0.8px 0.8px #171819;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: black;
+}
+
+main form button:hover {
+    background-color: black;
+    color: #AA2288;
+    text-shadow: 0.8px 0.8px #171819;
+}
+
+main form .links-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+}
+
+main form .links-container span {
+    font-size: 0.8em;
+    font-weight: 900;
+}
+
+main form .links-container aside {
+    margin-top: 3%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main form .links-container aside i {
+    font-size: 1.5em;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form .links-container aside .fa-google-plus {
+    color: #e34133;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 0.75em;
+}
+
+main form .links-container aside .fa-google-plus:hover {
+    color: white;
+    background-color: #e34133;
+}
+
+main form .links-container aside .fa-linkedin:hover {
+    background-color: #0E76A8;
+    color: white;
+}
+
+main form .links-container aside .fa-linkedin {
+    background-color: white;
+    color: #0E76A8;
+    height: 35px;
+    width: 35px;
+    border-radius: 12px;
+}
+
+main form .links-container aside .fa-twitter-square {
+    background-color: white;
+    color: #00ACEE;
+    height: 35px;
+    width: 35px;
+    border-radius: 12px;
+
+}
+
+main form .links-container aside .fa-twitter-square:hover {
+    color: white;
+    background-color: #00ACEE;
+}
+
+main form footer {
+    width: 100%;
+    margin-top: 10%;
+    display: block;
+    align-items: center;
+}
+
+main form footer hr {
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    border: none;
+}
+
+main form footer span {
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-top: 5%;
+    color: #AA2288;
+}
+
+main form footer a {
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    color: #AA22AA;
+}
+
+main form footer a:hover {
+    color: deeppink;
+}
+
+#entre {
+    color: #AA2288;
+    font-weight: 400;
+}
